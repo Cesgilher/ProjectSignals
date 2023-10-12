@@ -26,3 +26,17 @@ P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\re
 P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.pdb
 P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.genruntimeconfig.cache
 P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ref\ProjectSignals.dll
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\bin\Debug\net7.0\ProjectSignals.exe
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\bin\Debug\net7.0\ProjectSignals.deps.json
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\bin\Debug\net7.0\ProjectSignals.runtimeconfig.json
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\bin\Debug\net7.0\ProjectSignals.dll
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\bin\Debug\net7.0\ProjectSignals.pdb
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.AssemblyInfoInputs.cache
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.AssemblyInfo.cs
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.csproj.CoreCompileInputs.cache
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.dll
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\refint\ProjectSignals.dll
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.pdb
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.genruntimeconfig.cache
+C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ref\ProjectSignals.dll
