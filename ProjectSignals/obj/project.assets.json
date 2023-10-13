@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\jsantisteban\\.nuget\\packages\\": {}
+    "C:\\Users\\cesgi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jsantisteban\\Source\\Repos\\Cesgilher\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
+      "projectUniqueName": "P:\\CËSAR\\documentos\\Cesgilher\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
       "projectName": "ProjectSignals",
-      "projectPath": "C:\\Users\\jsantisteban\\Source\\Repos\\Cesgilher\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
-      "packagesPath": "C:\\Users\\jsantisteban\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jsantisteban\\Source\\Repos\\Cesgilher\\ProjectSignals\\ProjectSignals\\obj\\",
+      "projectPath": "P:\\CËSAR\\documentos\\Cesgilher\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
+      "packagesPath": "C:\\Users\\cesgi\\.nuget\\packages\\",
+      "outputPath": "P:\\CËSAR\\documentos\\Cesgilher\\ProjectSignals\\ProjectSignals\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\jsantisteban\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cesgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,19 +1,19 @@
-﻿using ProjectSignals.Model;
-using ProjectSignals.Controller;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿using GestampSignals.Model;
 
 namespace ProjectSignals
 {
-    public class program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("hello World");
+            Digital temp = new Digital("temperatura");
+
+            temp.AddValue(1);
+            temp.AddValue(2);
+            temp.AddValue(3);
+            temp.AddValue(4);
+
+            
         }
     }
 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectSignals.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,21 +8,22 @@ using System.Threading.Tasks;
 namespace GestampSignals.Model
 {
     public abstract class Signal
-    {
-        private string _Name {  get => _Name; set => _Name = value; }
-        //private int _Value { get => _Value; set => _Value = value; }
-        private DateTime _Time { get => _Time; set => _Time = value; }
+    {   
+        private string name;
+        private List<Data> data = new List<Data>{};
 
-        public Signal(string name, DateTime time)
+
+
+        public string Name { get => name; set => name = value; }
+        public List<Data> Data { get => data; set => data = value; }
+
+        public void AddValue(int data)
         {
-            _Name = name;
-            //_Value = value;
-            _Time = time;
+            this.Data.Add(new Data(data));
+
         }
 
-        public override string ToString()
-        {
-            return $"Name: {_Name}, Time: {_Time}";
-        }
+        
+
     }
 }
