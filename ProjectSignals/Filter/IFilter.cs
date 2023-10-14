@@ -1,4 +1,5 @@
-﻿using ProjectSignals.Model;
+﻿using ProjectSignals.Controller;
+using ProjectSignals.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,20 +10,22 @@ namespace ProjectSignals.Filter
 {
     public interface IFilter
     {
-        public Signal ByName(string name) {
+        public Signal ByName(SignalManager signalManager, string name) {
 
-            bool signalExists = signals.Any(s => s.Name == name);
+            Signal signal = signalManager.signalList.FirstOrDefault(s => s.Name == name);
+            return signal;
 
-            return null;
         }
 
-        public List<Signal> ByType(string name) 
+        public List<Signal> ByType(SignalManager signalManager, string type)
         {
-            return null;
+            List<Signal> signals = signalManager.signalList.Where(s => s.GetType().Name == type).ToList();
+            return signals;
+        }
+        public List<Signal> ByDate(SignalManager signalManager, DateTime time)
+        {
+            
         }
 
-        public List<Signal> ByDate(DateTime date)
-        {
-            return null;
-        }
-}
+
+    }
