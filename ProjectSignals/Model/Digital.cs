@@ -16,12 +16,10 @@ namespace ProjectSignals.Model
         
         }
 
-        public void AddValue(int data)
-        {
-            this.Data.Add(new Data(data));
+        
 
-        }
-       
+        
+
 
     }
 }

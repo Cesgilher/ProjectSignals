@@ -12,14 +12,14 @@ namespace ProjectSignals.Controller
     {
        
 
-        public Signal CreateDigitalSignal() 
+        public Digital CreateDigitalSignal() 
         {
             Console.WriteLine("Please insert the new Digital Signal");
 
             return null;
         }
 
-        public Signal CreateAnalogSignal() 
+        public Analog CreateAnalogSignal() 
         {
             Console.WriteLine("Please insert the new Analog Signal");
 
