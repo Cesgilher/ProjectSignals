@@ -1,0 +1,14 @@
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ProjectSignals.GeneratedMSBuildEditorConfig.editorconfig
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ProjectSignals.AssemblyInfoInputs.cache
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ProjectSignals.AssemblyInfo.cs
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ProjectSignals.csproj.CoreCompileInputs.cache
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\bin\Release\net7.0\ProjectSignals.exe
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\bin\Release\net7.0\ProjectSignals.deps.json
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\bin\Release\net7.0\ProjectSignals.runtimeconfig.json
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\bin\Release\net7.0\ProjectSignals.dll
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\bin\Release\net7.0\ProjectSignals.pdb
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ProjectSignals.dll
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\refint\ProjectSignals.dll
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ProjectSignals.pdb
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ProjectSignals.genruntimeconfig.cache
+P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\obj\Release\net7.0\ref\ProjectSignals.dll

@@ -1,11 +1,10 @@
-﻿using ProjectSignals.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestampSignals.Model
+namespace ProjectSignals.Model
 {
     public class Digital : Signal
     {
@@ -17,6 +16,11 @@ namespace GestampSignals.Model
         
         }
 
+        public void AddValue(int data)
+        {
+            this.Data.Add(new Data(data));
+
+        }
        
 
     }

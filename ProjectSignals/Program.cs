@@ -1,4 +1,4 @@
-﻿using GestampSignals.Model;
+﻿using ProjectSignals.Model;
 
 namespace ProjectSignals
 {
@@ -6,14 +6,20 @@ namespace ProjectSignals
     {
         static void Main(string[] args)
         {
-            Digital temp = new Digital("temperatura");
-
-            temp.AddValue(1);
+            Digital switch1 = new Digital("Switch1");
+            Analog temp = new Analog("Temperatura");
+            temp.AddValue(10.3);
             temp.AddValue(2);
             temp.AddValue(3);
             temp.AddValue(4);
+            switch1.AddValue(0);
+            switch1.AddValue(1);
+            switch1.AddValue(1);
+            switch1.AddValue(1);
+            switch1.AddValue(0);
 
-            
+            Console.WriteLine(switch1.Data[1].TimeStamp);
+
         }
     }
 

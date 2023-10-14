@@ -1,11 +1,10 @@
-﻿using ProjectSignals.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestampSignals.Model
+namespace ProjectSignals.Model
 {
     public abstract class Signal
     {   
@@ -17,11 +16,9 @@ namespace GestampSignals.Model
         public string Name { get => name; set => name = value; }
         public List<Data> Data { get => data; set => data = value; }
 
-        public void AddValue(int data)
-        {
-            this.Data.Add(new Data(data));
+        public void AddValue() { }
+        
 
-        }
 
         
 

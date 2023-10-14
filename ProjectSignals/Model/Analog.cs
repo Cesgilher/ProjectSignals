@@ -1,12 +1,11 @@
-﻿using ProjectSignals.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GestampSignals.Model
+namespace ProjectSignals.Model
 {
     internal class Analog : Signal
     {
@@ -15,10 +14,12 @@ namespace GestampSignals.Model
             this.Name = name;
         }
 
-       
-      
 
+        public void AddValue(double data)
+        {
+            this.Data.Add(new Data(data));
 
-       
+        }
+
     }
 }
