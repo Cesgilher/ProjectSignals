@@ -24,6 +24,7 @@ namespace ProjectSignals.Filter
         }
         public List<Signal> ByDate(SignalManager signalManager, DateTime time)
         {
+            return null;
             
         }
 
