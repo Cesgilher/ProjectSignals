@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 namespace ProjectSignals.Model
 {
     public abstract class Signal
-    {   
+    {
         private string name;
-        private List<Data> data = new List<Data>{};
+        private List<Data> data = new List<Data> { };
 
 
 
@@ -17,10 +17,12 @@ namespace ProjectSignals.Model
         public List<Data> Data { get => data; set => data = value; }
 
         public void AddValue() { }
-        
 
 
-        
+
+
 
     }
+    
+
 }

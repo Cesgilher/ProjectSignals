@@ -5,7 +5,7 @@
 //using System.Text;
 //using System.Threading.Tasks;
 
-//namespace ProjestSignals.Controller
+//namespace Projest Signals.Controller
 //{
 //    public class SignalManager : ISignalManager
 //    {
