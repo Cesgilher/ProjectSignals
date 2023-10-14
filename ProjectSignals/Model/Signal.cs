@@ -18,10 +18,6 @@ namespace ProjectSignals.Model
 
         public void AddValue() { }
 
-
-
-
-
     }
     
 

@@ -7,65 +7,67 @@ using System.Threading.Tasks;
 
 namespace ProjectSignals.Controller
 {
-    public class SignalManager : ISignalManager
-{
-    public List<Signal> signalList = new List<Signal>();
-
-    public SignalManager() { }
-
-    internal List<Signal> Signals { get => signalList; private set => signalList = value; }
-
-    public Signal CreateDigitalSignal()
+    public class SignalManager
     {
-        Signal s = new Digital();
+        private List<Signal> signalList; 
 
-        Console.WriteLine("Please insert the new Digital Signal");
-
-        string name = Console.ReadLine();
-        int value = Convert.ToInt16(Console.ReadLine());
-        DateTime time = DateTime.Now;
-        double switchOption = Convert.ToInt16(Console.ReadLine());
-
-        s = new Digital();
-
-        return s;
-    }
-    public Signal CreateAnalogSignal()
-    {
-        Signal s = new Analog();
-
-        Console.WriteLine("Please insert the new Digital Signal");
-        string name = Console.ReadLine();
-        int value = Convert.ToInt16(Console.ReadLine());
-        DateTime time = DateTime.Now;
-        double temperature = Convert.ToDouble(Console.ReadLine());
-
-        s = new Analog();
-
-        return s;
-    }
-    public void AddSignal(Signal s)
-    {
-        if (s != null)
+        public SignalManager()
         {
-            signalList.Add(s);
+            signalList = new List<Signal>();
         }
-    }
 
-    public void DeleteSignal()
-    {
-
-    }
-
-    public void ShowSignals()
-    {
-        foreach (Signal s in signalList)
+        public Signal CreateDigitalSignal()
         {
-            if (s != null)
+            string name;
+            name = Console.ReadLine();
+
+            Digital digtalSignal = new Digital(name);
+
+            DateTime time = DateTime.UtcNow;
+
+            return digtalSignal;
+        }
+        public Signal  CreateAnalogSignal()
+        {
+            string name;
+            name = Console.ReadLine();
+
+            Analog analogSignal = new Analog(name);
+
+            DateTime time = DateTime.UtcNow;
+
+            return analogSignal;
+        }
+        public void AddSignal()
+        {
+            int option;
+            Console.WriteLine("1- Digital\n" +
+                "2- Analog");
+            option = Convert.ToInt32(Console.ReadLine());
+
+            if (option == 1)
             {
-                Console.WriteLine(" Name: " + s._Name + " Value: " + s._Value + " Time: " + s._Time);
+                signalList.Add(CreateDigitalSignal());
+            }
+            else
+            {
+                signalList.Add(CreateAnalogSignal());
+            }
+            
+           
+        }
+
+        public void DeleteSignal()
+        {
+
+        }
+
+        public  void ShowSignals()
+        {
+            foreach (Signal signal in signalList)
+            {
+                Console.WriteLine($"Name: {signal.Name}, Type: {signal.GetType().Name}");
             }
         }
     }
-}
 }
