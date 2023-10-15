@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "hma240Kwx5V8PvTKTNgddCSUI++w4MREPzSNJCkELKWN/aNbuQDu5IxywVTq8vHasOLFSPDH4FwSP5oYVK+sbA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Arc042\\source\\repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
+=======
+  "dgSpecHash": "Z7iHqJcSVJXtwUttSnluP18slz1MJVk2eA39WwYwzleJl8VdN9us2Dj/qGsxMRstktT/zB2dyQ/UVB017hh64w==",
+  "success": true,
+  "projectFilePath": "P:\\CËSAR\\documentos\\Cesgilher\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
+>>>>>>> 6f6eddb32ec95a1a7ab63f95d82ef7bc8e9d7725
   "expectedPackageFiles": [],
   "logs": []
 }

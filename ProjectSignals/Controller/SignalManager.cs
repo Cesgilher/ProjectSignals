@@ -10,12 +10,31 @@ namespace ProjectSignals.Controller
 {
     public class SignalManager
     {
-        private List<Signal> signalList; 
+        public List<Signal> signalList = new List<Signal>();
 
         public List<Signal> SignalList { get => signalList; set => signalList = value; }
 
         
+<<<<<<< HEAD
         
+=======
+        //public Signal CreateDigitalSignal()  ESTOS METODOS ME PARECEN ALGO REDUNDANTES
+        //{
+        //    string name = Console.ReadLine();
+
+        //    Digital digtalSignal = new Digital(name);
+
+        //    return digtalSignal;
+        //}
+        //public Signal  CreateAnalogSignal()
+        //{
+        //    string name = Console.ReadLine();
+
+        //    Analog analogSignal = new Analog(name);
+
+        //    return analogSignal;
+        //}
+>>>>>>> 6f6eddb32ec95a1a7ab63f95d82ef7bc8e9d7725
         public void AddDigitalSignal(string name)
         {
             bool signalExists = signalList.Any(s => s.Name == name);
@@ -35,6 +54,10 @@ namespace ProjectSignals.Controller
 
 
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6f6eddb32ec95a1a7ab63f95d82ef7bc8e9d7725
         public void AddDigitalValue(string name, int value)
         {
             int signalIndex = signalList.FindIndex(s => s.Name == name);
@@ -66,8 +89,39 @@ namespace ProjectSignals.Controller
 
             
         }
+<<<<<<< HEAD
         public void DeleteSignal(string name)
         {
+=======
+
+        public void AddAnalogValue(string name, double value)
+        {
+            int signalIndex = signalList.FindIndex(s => s.Name == name);
+            if (signalIndex == -1)
+            {
+                AddAnalogSignal(name);
+            }
+
+            if (signalList[signalIndex] is Analog)
+            {
+                signalList[signalIndex].AddValue(value);
+            }
+            
+            else
+            {
+                throw new InvalidOperationException("La señal existente no es una señal analógica.");
+            }
+
+
+        }
+
+        
+
+
+        
+        public void DeleteSignal(string name)
+        {
+>>>>>>> 6f6eddb32ec95a1a7ab63f95d82ef7bc8e9d7725
             Signal signalToRemove = signalList.FirstOrDefault(s => s.Name == name);
             if (signalToRemove != null)
             {
@@ -82,6 +136,7 @@ namespace ProjectSignals.Controller
             }
         }
 
+<<<<<<< HEAD
         public void SaveSignal()
         {
             string path = @"C:\Users\Signal.txt";
@@ -97,6 +152,26 @@ namespace ProjectSignals.Controller
                     sw.WriteLine(s.Name + " " + s.Data);
 
             }
+=======
+        public Signal FilterByName( string name)
+        {
+
+            Signal signal = signalList.FirstOrDefault(s => s.Name == name);
+            return signal;
+
+        }
+        public List<Signal> FilterByType( string type)
+        {
+            List<Signal> signals = signalList.Where(s => s.GetType().Name == type).ToList();
+            return signals;
+        }
+
+        public List<Signal> FilterByDate( DateTime time)
+        {
+            List<Signal> signalsWithDate = signalList.Where(signal => signal.Data.Any(data => data.TimeStamp.Date == time.Date)).ToList();
+            return signalsWithDate;
+
+>>>>>>> 6f6eddb32ec95a1a7ab63f95d82ef7bc8e9d7725
         }
     }
 }

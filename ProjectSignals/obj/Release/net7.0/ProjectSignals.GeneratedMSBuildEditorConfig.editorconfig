@@ -8,4 +8,8 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ProjectSignals
+<<<<<<< HEAD
 build_property.ProjectDir = C:\Users\Arc042\source\repos\ProjectSignals\ProjectSignals\
+=======
+build_property.ProjectDir = P:\CËSAR\documentos\Cesgilher\ProjectSignals\ProjectSignals\
+>>>>>>> 6f6eddb32ec95a1a7ab63f95d82ef7bc8e9d7725
