@@ -23,7 +23,7 @@ namespace ProjectSignals
 
             int option;
             SignalManager signalManager = new SignalManager();
-            FileManager file = new FileManager();
+            FileManager fileManager = new FileManager();
 
                 do 
                 {
