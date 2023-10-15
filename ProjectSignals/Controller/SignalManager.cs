@@ -15,7 +15,7 @@ namespace ProjectSignals.Controller
         public List<Signal> SignalList { get => signalList; set => signalList = value; }
 
         
-
+        public SignalManager() { }
         public void AddDigitalSignal(string name)
         {
             bool signalExists = signalList.Any(s => s.Name == name);
@@ -42,6 +42,9 @@ namespace ProjectSignals.Controller
             if (signalIndex == -1)
             {
                 AddDigitalSignal(name);
+                signalIndex = signalList.Count - 1;
+
+
             }
 
             if (signalList[signalIndex] is Digital)
@@ -67,15 +70,14 @@ namespace ProjectSignals.Controller
 
             
         }
-
-        
-
         public void AddAnalogValue(string name, double value)
         {
             int signalIndex = signalList.FindIndex(s => s.Name == name);
             if (signalIndex == -1)
             {
                 AddAnalogSignal(name);
+                signalIndex = signalList.Count - 1;
+
             }
 
             if (signalList[signalIndex] is Analog)
@@ -115,7 +117,7 @@ namespace ProjectSignals.Controller
         public Signal FilterByName( string name)
         {
 
-            Signal signal = signalList.FirstOrDefault(s => s.Name == name);
+            var signal = signalList.FirstOrDefault(s => s.Name == name);
             return signal;
 
         }
@@ -125,6 +127,11 @@ namespace ProjectSignals.Controller
             return signals;
         }
 
+        public List<T> FilterByType<T>()
+        {
+            Type targetType = typeof(T);
+            return signalList.Where(s => s.GetType() == targetType).Cast<T>().ToList();
+        }
         public List<Signal> FilterByDate( DateTime time)
         {
             List<Signal> signalsWithDate = signalList.Where(signal => signal.Data.Any(data => data.TimeStamp.Date == time.Date)).ToList();

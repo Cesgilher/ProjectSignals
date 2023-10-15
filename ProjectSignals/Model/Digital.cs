@@ -16,11 +16,10 @@ namespace ProjectSignals.Model
         
         }
 
-        
-
-        
-
-
+        public static explicit operator Digital(List<Signal> v)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
     

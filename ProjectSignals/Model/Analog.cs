@@ -15,23 +15,22 @@ namespace ProjectSignals.Model
         }
 
 
-        public void AddValue(double data)
-        {
-            this.Data.Add(new Data(data));
+        
 
-        }
-
-        public Data MaximumData()
+        public void MaximumData()
         {
             Data maxData = Data.Aggregate((max, current) => (max == null || current.Value > max.Value) ? current : max);
-            return maxData;
+            Console.WriteLine( $"El valor máximo para está señal es: {maxData.Value} con fecha: {maxData.TimeStamp}");
+            
         }
 
-        public Data LowestData()
+        public void LowestData()
         {
-            Data minData = Data.Aggregate((min, current) => (min == null || current.Value > min.Value) ? current : min);
-            return minData;
+            Data minData = Data.Aggregate((min, current) => (min == null || current.Value < min.Value) ? current : min);
+            Console.WriteLine($"El valor mínimo para está señal es: {minData.Value} con fecha: {minData.TimeStamp}");
+
         }
+        
 
         public void Avg()
         {

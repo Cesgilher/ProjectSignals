@@ -16,7 +16,11 @@ namespace ProjectSignals.Model
         public string Name { get => name; set => name = value; }
         public List<Data> Data { get => data; set => data = value; }
 
-        public void AddValue(double value) { }
+        public void AddValue(double data)
+        {
+            this.Data.Add(new Data(data));
+
+        }
 
     }
     
