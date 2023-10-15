@@ -1,6 +1,5 @@
 ﻿using ProjectSignals.Model;
 using ProjectSignals.Controller;
-using ProjectSignals.Filter;
 
 namespace ProjectSignals
 {

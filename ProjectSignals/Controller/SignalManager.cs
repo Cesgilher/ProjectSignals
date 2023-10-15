@@ -4,68 +4,79 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace ProjectSignals.Controller
 {
     public class SignalManager
     {
-        List<Signal> signalList; 
+        private List<Signal> signalList; 
 
-        public SignalManager()
+        public List<Signal> SignalList { get => signalList; set => signalList = value; }
+
+        
+        
+        public void AddDigitalSignal(string name)
         {
-            signalList = new List<Signal>();
-        }
-
-        public Signal CreateDigitalSignal()
-        {
-            string name;
-            name = Console.ReadLine();
-
-            Digital digtalSignal = new Digital(name);
-
-            DateTime time = DateTime.UtcNow;
-
-            return digtalSignal;
-        }
-        public Signal  CreateAnalogSignal()
-        {
-            string name;
-            name = Console.ReadLine();
-
-            Analog analogSignal = new Analog(name);
-
-            DateTime time = DateTime.UtcNow;
-
-            return analogSignal;
-        }
-        public void AddSignal()
-        {
-            int option;
-            Console.WriteLine("Select one\n" +
-                "1- Digital\n" +
-                "2- Analog");
-            option = Convert.ToInt32(Console.ReadLine());
-
-            if (option == 1)
+            bool signalExists = signalList.Any(s => s.Name == name);
+            if (!signalExists)
             {
-                signalList.Add(CreateDigitalSignal());
+                signalList.Add(new Digital(name));
+            }
+
+        }
+        public void AddAnalogSignal(string name)
+        {
+            bool signalExists = signalList.Any(s => s.Name == name);
+            if (!signalExists) 
+            {
+                signalList.Add(new Analog(name));
+            }
+
+
+        }
+        public void AddDigitalValue(string name, int value)
+        {
+            int signalIndex = signalList.FindIndex(s => s.Name == name);
+            if (signalIndex == -1)
+            {
+                AddDigitalSignal(name);
+            }
+
+            if (signalList[signalIndex] is Digital)
+            {
+
+                if (value == 0 || value == 1) 
+                { 
+                    signalList[signalIndex].AddValue(value);
+
+
+                }
+
+                else
+                {
+                    throw new ArgumentException("El valor de 'data' debe ser 0 o 1 en una señal digital.");
+                }
+                
             }
             else
             {
-                signalList.Add(CreateAnalogSignal());
+                throw new InvalidOperationException("La señal existente no es una señal digital.");
             }
+
             
-           
         }
-
-        public void DeleteSignal()
+        public void DeleteSignal(string name)
         {
-
+            Signal signalToRemove = signalList.FirstOrDefault(s => s.Name == name);
+            if (signalToRemove != null)
+            {
+                signalList.Remove(signalToRemove);
+            }
         }
-
         public  void ShowSignals()
         {
-            foreach (Signal signal in signalList)
+            foreach (Signal signal in SignalList)
             {
                 Console.WriteLine($"Name: {signal.Name}, Type: {signal.GetType().Name}");
             }
@@ -73,18 +84,19 @@ namespace ProjectSignals.Controller
 
         public void SaveSignal()
         {
-            string path = @"C:\Users\Signals.txt";
+            string path = @"C:\Users\Signal.txt";
 
             if (File.Exists(path))
             {
                 File.Delete(path);
             }
+
             using (StreamWriter sw = File.CreateText(path))
             {
                 foreach (Signal s in signalList)
                     sw.WriteLine(s.Name + " " + s.Data);
-            }
 
+            }
         }
     }
 }
