@@ -1,7 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ProjectSignals",
+    "\\ProjectSignals\\Filter",
+    "\\ProjectSignals\\Model"
   ],
-  "SelectedNode": "\\ProjectSignals.sln",
+  "SelectedNode": "\\ProjectSignals\\Filter\\SignalFilter.cs",
   "PreviewInSolutionExplorer": false
 }

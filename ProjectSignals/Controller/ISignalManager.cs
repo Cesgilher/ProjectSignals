@@ -8,7 +8,7 @@ using ProjectSignals.Model;
 
 namespace ProjectSignals.Controller
 {
-    internal interface ISignalManager
+    interface ISignalManager
     {
        
 

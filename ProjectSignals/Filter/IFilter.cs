@@ -6,11 +6,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace ProjectSignals.Filter
 {
     public interface IFilter
     {
-        public Signal ByName(SignalManager signalManager, string name) {
+        public Signal ByName(SignalManager signalManager, string name)
+        {
 
             Signal signal = signalManager.signalList.FirstOrDefault(s => s.Name == name);
             return signal;
@@ -25,8 +27,9 @@ namespace ProjectSignals.Filter
         public List<Signal> ByDate(SignalManager signalManager, DateTime time)
         {
             return null;
-            
+
         }
 
 
     }
+}

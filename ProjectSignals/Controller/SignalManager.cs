@@ -9,7 +9,7 @@ namespace ProjectSignals.Controller
 {
     public class SignalManager
     {
-        private List<Signal> signalList; 
+        List<Signal> signalList; 
 
         public SignalManager()
         {
@@ -41,7 +41,8 @@ namespace ProjectSignals.Controller
         public void AddSignal()
         {
             int option;
-            Console.WriteLine("1- Digital\n" +
+            Console.WriteLine("Select one\n" +
+                "1- Digital\n" +
                 "2- Analog");
             option = Convert.ToInt32(Console.ReadLine());
 
@@ -68,6 +69,22 @@ namespace ProjectSignals.Controller
             {
                 Console.WriteLine($"Name: {signal.Name}, Type: {signal.GetType().Name}");
             }
+        }
+
+        public void SaveSignal()
+        {
+            string path = @"C:\Users\Signals.txt";
+
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+            using (StreamWriter sw = File.CreateText(path))
+            {
+                foreach (Signal s in signalList)
+                    sw.WriteLine(s.Name + " " + s.Data);
+            }
+
         }
     }
 }

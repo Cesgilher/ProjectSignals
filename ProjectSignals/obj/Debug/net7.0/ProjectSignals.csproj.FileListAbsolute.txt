@@ -40,3 +40,7 @@ C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\D
 C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.pdb
 C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.genruntimeconfig.cache
 C:\Users\jsantisteban\Source\Repos\Cesgilher\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ref\ProjectSignals.dll
+C:\Users\Arc042\source\repos\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Arc042\source\repos\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.AssemblyInfoInputs.cache
+C:\Users\Arc042\source\repos\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.AssemblyInfo.cs
+C:\Users\Arc042\source\repos\ProjectSignals\ProjectSignals\obj\Debug\net7.0\ProjectSignals.csproj.CoreCompileInputs.cache

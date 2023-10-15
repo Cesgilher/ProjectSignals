@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Arc042\\Source\\Repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj": {}
+    "C:\\Users\\Arc042\\source\\repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Arc042\\Source\\Repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj": {
+    "C:\\Users\\Arc042\\source\\repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Arc042\\Source\\Repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
+        "projectUniqueName": "C:\\Users\\Arc042\\source\\repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
         "projectName": "ProjectSignals",
-        "projectPath": "C:\\Users\\Arc042\\Source\\Repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
+        "projectPath": "C:\\Users\\Arc042\\source\\repos\\ProjectSignals\\ProjectSignals\\ProjectSignals.csproj",
         "packagesPath": "C:\\Users\\Arc042\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Arc042\\Source\\Repos\\ProjectSignals\\ProjectSignals\\obj\\",
+        "outputPath": "C:\\Users\\Arc042\\source\\repos\\ProjectSignals\\ProjectSignals\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Empresa\\VSC HompHerrSDK\\NuGetPackages"
